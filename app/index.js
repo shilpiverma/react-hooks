@@ -12,7 +12,7 @@ const user = {
 
 
 
-function Example() {
+function ReactHooks() {
   // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(0);
 
@@ -43,6 +43,6 @@ class HelloWorld extends React.Component {
 
 
 function tick() {
-    ReactDOM.render(<Example />, document.getElementById('root'));
+    ReactDOM.render(<ReactHooks />, document.getElementById('root'));
   }
   setInterval(tick, 1000);
