@@ -10,12 +10,19 @@ const user = {
   lastName: 'MAdaan'
 };
 
+var medicalPackages=[
+  {PackageTypeId:2,Amount:200},
+  {PackageTypeId:3,Amount:200},
+  {PackageTypeId:4,Amount:200},
+];
+
 
 
 function ReactHooks() {
   // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(0);
 
+  console.log(medicalPackages);
 useEffect(() => {
     document.title = `You clicked ${count} times`;
   });
@@ -26,12 +33,34 @@ useEffect(() => {
       <button onClick={() => setCount(count + 1)}>
         Click me
       </button>
+
+      <table>
+        <tr>
+          <td>Coverages</td>
+          <td>Current</td>
+          <td>Renewal</td>
+          <td>Option 1</td>
+          <td>Option 2</td>
+          <td>Option 3</td>
+        </tr>
+
+        if(medicalPackages.length){
+          medicalRow=<tr >
+        <td >Medical</td>
+          <td>Current</td>
+          <td>Renewal</td>
+          <td>Option 1</td>
+          <td>Option 2</td>
+          <td>Option 3</td>
+        </tr>
+        }
+      </table>
     </div>
   );
 }
 class HelloWorld extends React.Component {
     
-    render() {
+    render
           return (
                   <div>
                     Hello, {formatName(user)}
