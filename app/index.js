@@ -52,6 +52,7 @@ useEffect(() => {
           <td>Option 1</td>
           <td>Option 2</td>
           <td>Option 3</td>
+          <td>Option 3</td>
         </tr>
         }
       </table>
