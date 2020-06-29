@@ -34,34 +34,13 @@ useEffect(() => {
         Click me
       </button>
 
-      <table>
-        <tr>
-          <td>Coverages</td>
-          <td>Current</td>
-          <td>Renewal</td>
-          <td>Option 1</td>
-          <td>Option 2</td>
-          <td>Option 3</td>
-        </tr>
-
-        if(medicalPackages.length){
-          medicalRow=<tr >
-        <td >Medical</td>
-          <td>Current</td>
-          <td>Renewal</td>
-          <td>Option 1</td>
-          <td>Option 2</td>
-          <td>Option 3</td>
-          <td>Option 3</td>
-        </tr>
-        }
-      </table>
+    
     </div>
   );
 }
 class HelloWorld extends React.Component {
     
-    render
+    render(){
           return (
                   <div>
                     Hello, {formatName(user)}
@@ -69,7 +48,7 @@ class HelloWorld extends React.Component {
                   </div>
                 )
         }
-};
+}
 
 
 function tick() {
